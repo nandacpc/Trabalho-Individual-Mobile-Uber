@@ -1,47 +1,27 @@
-import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Image, Text, TouchableOpacity, View } from "react-native";
 import { PlansProps } from "../../types/types";
+import { styles } from "./styles";
 
-export const PlansCard = ({ title, image, description, arrow }: PlansProps) => {
+export const PlansCard = ({
+  title,
+  image,
+  description,
+  arrow,
+  style,
+}: PlansProps) => {
   return (
-    <TouchableOpacity style={styles.suggestionCard}>
+    <TouchableOpacity style={[styles.suggestionCard, style]}>
       <View>
-        <Image
-          source={image}
-          style={styles.suggestionImage}
-          resizeMode="cover"
-        />
+        <Image source={image} style={styles.suggestionImage} />
       </View>
       <View style={styles.textCard}>
-        <Text style={styles.title}>
+        <Text style={styles.title} numberOfLines={1}>
           {title} {arrow && <Text>&#10141;</Text>}
         </Text>
-        <Text style={styles.description}>{description}</Text>
+        <Text style={styles.description} numberOfLines={1}>
+          {description}
+        </Text>
       </View>
     </TouchableOpacity>
   );
 };
-
-const styles = StyleSheet.create({
-  suggestionCard: {
-    alignItems: "center",
-    justifyContent: "center",
-    backgroundColor: "#f5f5f5",
-    borderRadius: 14,
-    marginRight: 15,
-  },
-  suggestionImage: {
-    borderRadius: 14,
-    width: 350,
-    height: 200,
-  },
-  textCard: {
-    padding: 16,
-  },
-  title: {
-    fontSize: 18,
-    fontWeight: "500",
-  },
-  description: {
-    paddingVertical: 5,
-  },
-});

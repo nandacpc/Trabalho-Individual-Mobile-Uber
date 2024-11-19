@@ -17,6 +17,7 @@ import { SuggestionIcon } from "../../components/suggestionIcon/SuggestionIcon";
 import { SuggestionCard } from "../../components/suggestionCard/SuggestionCard";
 import { PlansCard } from "../../components/plansCard/PlansCard";
 import { styles } from "./styles";
+import React from "react";
 
 export const HomeScreen = () => {
   return (
@@ -32,7 +33,7 @@ export const HomeScreen = () => {
         </TouchableOpacity>
         <TouchableOpacity style={styles.tabs}>
           <Image
-            source={require("../../../assets/ride.png")}
+            source={require("../../../assets/delivery.png")}
             style={styles.tabIcon}
             resizeMode="contain"
           />
@@ -98,87 +99,87 @@ export const HomeScreen = () => {
             />
           </View>
         </View>
-        <ScrollView
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          style={styles.plansSection}
-        >
-          <SuggestionCard
-            title={"Pay less with up to 30% off"}
-            image={require("../../../assets/ride.png")}
-            description={"Order here!"}
-            arrow={true}
-          />
-          <SuggestionCard
-            title={"Verification with U-Code"}
-            image={require("../../../assets/ride.png")}
-            description={"Learn more"}
-            arrow={true}
-          />
-          <SuggestionCard
-            title={"Enjoy 10% Uber One credits"}
-            image={require("../../../assets/ride.png")}
-            description={"Get 2 months free"}
-            arrow={true}
-          />
-          <SuggestionCard
-            title={"Fast and secure delivery"}
-            image={require("../../../assets/ride.png")}
-            description={"Start now"}
-            arrow={true}
-          />
-          <SuggestionCard
-            title={"Travel on your schedule"}
-            image={require("../../../assets/ride.png")}
-            description={"Book a ride"}
-            arrow={true}
-          />
-          <SuggestionCard
-            title={"Travel in comfort"}
-            image={require("../../../assets/ride.png")}
-            description={"Uber Comfort"}
-            arrow={true}
-          />
-          <SuggestionCard
-            title={"Enjoy a luxury experience"}
-            image={require("../../../assets/ride.png")}
-            description={"Ride with Uber Black"}
-            arrow={true}
-          />
-          <SuggestionCard
-            title={"Discounts up to 10%"}
-            image={require("../../../assets/ride.png")}
-            description={"On groceries"}
-            arrow={true}
-          />
-          <SuggestionCard
-            title={"Discounts up to 10%"}
-            image={require("../../../assets/ride.png")}
-            description={"On groceries"}
-            arrow={true}
-          />
-        </ScrollView>
+        <View style={[styles.plansSection]}>
+          <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+            <SuggestionCard
+              title={"Pay less with up to 30% off"}
+              image={require("../../../assets/uber05.png")}
+              description={"Order here!"}
+              arrow={true}
+            />
+            <SuggestionCard
+              title={"Verification with U-Code"}
+              image={require("../../../assets/ride.png")}
+              description={"Learn more"}
+              arrow={true}
+            />
+            <SuggestionCard
+              title={"Enjoy 10% Uber One credits"}
+              image={require("../../../assets/ride.png")}
+              description={"Get 2 months free"}
+              arrow={true}
+            />
+            <SuggestionCard
+              title={"Fast and secure delivery"}
+              image={require("../../../assets/ride.png")}
+              description={"Start now"}
+              arrow={true}
+            />
+            <SuggestionCard
+              title={"Travel on your schedule"}
+              image={require("../../../assets/ride.png")}
+              description={"Book a ride"}
+              arrow={true}
+            />
+            <SuggestionCard
+              title={"Travel in comfort"}
+              image={require("../../../assets/ride.png")}
+              description={"Uber Comfort"}
+              arrow={true}
+            />
+            <SuggestionCard
+              title={"Enjoy a luxury experience"}
+              image={require("../../../assets/ride.png")}
+              description={"Ride with Uber Black"}
+              arrow={true}
+            />
+            <SuggestionCard
+              title={"Discounts up to 10%"}
+              image={require("../../../assets/ride.png")}
+              description={"On groceries"}
+              arrow={true}
+            />
+            <SuggestionCard
+              title={"Discounts up to 10%"}
+              image={require("../../../assets/ride.png")}
+              description={"On groceries"}
+              arrow={true}
+              style={{ marginRight: 0 }}
+            />
+          </ScrollView>
+        </View>
 
         <View style={styles.plansSection}>
           <Text style={styles.sectionTitle}>Try Uber One for free</Text>
           <ScrollView horizontal showsHorizontalScrollIndicator={false}>
             <PlansCard
-              title={"More benefits for partner drivers"}
+              title={"10% in Uber Cash"}
               image={require("../../../assets/uber02.png")}
-              description={"Exceptional service on trips"}
+              description={"Earn while riding with the Uber app"}
               arrow={true}
             />
             <PlansCard
               title={"More benefits for partner drivers"}
-              image={require("../../../assets/uber02.png")}
+              image={require("../../../assets/uber03.png")}
               description={"Exceptional service on trips"}
               arrow={true}
             />
             <PlansCard
-              title={"More benefits for partner drivers"}
-              image={require("../../../assets/uber02.png")}
-              description={"Exceptional service on trips"}
+              title={"Exclusive offers"}
+              image={require("../../../assets/travel.png")}
+              description={"Special items and promotions"}
               arrow={true}
+              style={{ marginRight: 0 }}
             />
           </ScrollView>
         </View>
@@ -186,16 +187,17 @@ export const HomeScreen = () => {
           <Text style={styles.sectionTitle}>Travel smarter</Text>
           <ScrollView horizontal showsHorizontalScrollIndicator={false}>
             <PlansCard
-              title={"More benefits for partner drivers"}
-              image={require("../../../assets/uber02.png")}
-              description={"Exceptional service on trips"}
+              title={"Ride with Uber Moto"}
+              image={require("../../../assets/ubermoto01.png")}
+              description={"Say goodbye to traffic jams and save time"}
               arrow={true}
             />
             <PlansCard
-              title={"More benefits for partner drivers"}
-              image={require("../../../assets/uber02.png")}
-              description={"Exceptional service on trips"}
+              title={"Try traveling on 2 wheels -"}
+              image={require("../../../assets/uberbike.png")}
+              description={"Commute faster and more affordably"}
               arrow={true}
+              style={{ marginRight: 0 }}
             />
           </ScrollView>
         </View>
@@ -203,28 +205,31 @@ export const HomeScreen = () => {
           <Text style={styles.sectionTitle}>Ways to plan with Uber</Text>
           <ScrollView horizontal showsHorizontalScrollIndicator={false}>
             <PlansCard
-              title={"More benefits for partner drivers"}
-              image={require("../../../assets/uber02.png")}
-              description={"Exceptional service on trips"}
+              title={"Travel with comfort"}
+              image={require("../../../assets/uber04.png")}
+              description={
+                "The highest-rated partner drivers and the newest cars"
+              }
+              arrow={true}
+            />
+            <PlansCard
+              title={"Send an item"}
+              image={require("../../../assets/ubermoto.png")}
+              description={"On-demand delivery across the city"}
+              arrow={true}
+            />
+            <PlansCard
+              title={"Travel in style"}
+              image={require("../../../assets/uberluxo.png")}
+              description={"High-end rides in luxury cars"}
               arrow={true}
             />
             <PlansCard
               title={"More benefits for partner drivers"}
-              image={require("../../../assets/uber02.png")}
+              image={require("../../../assets/uberdriver.png")}
               description={"Exceptional service on trips"}
               arrow={true}
-            />
-            <PlansCard
-              title={"More benefits for partner drivers"}
-              image={require("../../../assets/uber02.png")}
-              description={"Exceptional service on trips"}
-              arrow={true}
-            />
-            <PlansCard
-              title={"More benefits for partner drivers"}
-              image={require("../../../assets/uber02.png")}
-              description={"Exceptional service on trips"}
-              arrow={true}
+              style={{ marginRight: 0 }}
             />
           </ScrollView>
         </View>

@@ -13,4 +13,5 @@ export type PlansProps = {
   image: ReturnType<typeof require>;
   description: string;
   arrow: boolean;
+  style?: object;
 };
