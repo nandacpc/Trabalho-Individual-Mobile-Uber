@@ -11,16 +11,15 @@ Este projeto faz parte do curso de **Desenvolvimento Web** do **Serratec**. A pr
 ## 🖼️ Comparação entre o original e o replica
 
 **Tela original do Uber:**
-![Tela original](https://github.com/nandacpc/Trabalho-Individual-Mobile-Uber/blob/master/screenshots/novidades-da-uber-para-ios.jpg)
-![Tela original](https://github.com/nandacpc/Trabalho-Individual-Mobile-Uber/blob/master/screenshots/ss02.jpg)
-![Tela original](https://github.com/nandacpc/Trabalho-Individual-Mobile-Uber/blob/master/screenshots/ss04.jpg)
+<img src="https://github.com/nandacpc/Trabalho-Individual-Mobile-Uber/blob/master/screenshots/novidades-da-uber-para-ios.jpg" alt="Tela original" width="400"/>
+<img src="https://github.com/nandacpc/Trabalho-Individual-Mobile-Uber/blob/master/screenshots/ss02.jpg" alt="Tela original" width="400"/>
+<img src="https://github.com/nandacpc/Trabalho-Individual-Mobile-Uber/blob/master/screenshots/ss04.jpg" alt="Tela original" width="400"/>
 
 **Replica desenvolvida:**
-![Replica desenvolvida](https://github.com/nandacpc/Trabalho-Individual-Mobile-Uber/blob/master/screenshots/ss11.jpg)
-![Replica desenvolvida](https://github.com/nandacpc/Trabalho-Individual-Mobile-Uber/blob/master/screenshots/ss03.jpg)
-![Replica desenvolvida](https://github.com/nandacpc/Trabalho-Individual-Mobile-Uber/blob/master/screenshots/ss05.jpg)
+<img src="https://github.com/nandacpc/Trabalho-Individual-Mobile-Uber/blob/master/screenshots/ss11.jpg" alt="Replica desenvolvida" width="400"/>
+<img src="https://github.com/nandacpc/Trabalho-Individual-Mobile-Uber/blob/master/screenshots/ss03.jpg" alt="Replica desenvolvida" width="400"/>
+<img src="https://github.com/nandacpc/Trabalho-Individual-Mobile-Uber/blob/master/screenshots/ss05.jpg" alt="Replica desenvolvida" width="400"/>
 
 ## 🛠️ Feito com
 
 - **Visual Studio Code**: Estruturação do conteúdo e estilização usando React Native.
-
